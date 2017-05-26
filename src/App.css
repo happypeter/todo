@@ -21,8 +21,7 @@ li {
 .main {
   background-color: #fff;
   width: 567px;
-  height: 628px;
-  margin: 200px auto;
+  margin: 100px auto;
   box-shadow: 0 2px 4px 0;
 }
 
@@ -43,7 +42,6 @@ li {
   height: 240px;
   overflow: auto;
 }
-
 .todo-list li {
   line-height: 60px;
   font-size: 24px;
