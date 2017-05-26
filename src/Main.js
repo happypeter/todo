@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
+import TodoList from './TodoList'
 
 const Header = () => (
   <div className="header">TODO</div>
-)
-
-const TodoList = () => (
-  <div className="todo-list">TodoList</div>
 )
 
 const Form = () => (
