@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import TodoList from './TodoList'
 import Form from './Form'
+import Actions from './Actions'
 
 const Header = () => (
   <div className="header">TODO</div>
 )
 
-const Actions = () => (
-  <div className="actions">Actions</div>
-)
+
 
 class Main extends Component {
   render() {

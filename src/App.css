@@ -110,9 +110,28 @@ li {
 }
 
 .actions {
-  border: 1px solid red;
   height: 110px;
 }
-.actions:click {
-  background-color: red;
+
+.actions .container {
+  width: 190px;
+  margin: 20px auto;
+}
+.actions div {
+  width: 50px;
+  height: 50px;
+  background-size: 40;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.actions .list {
+  float: left;
+  background-image: url(/img/list.svg);
+}
+
+.actions .completed {
+  float: right;
+  background-image: url(/img/right-red.svg);
 }
