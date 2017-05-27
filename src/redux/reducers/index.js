@@ -1,9 +1,11 @@
+import { combineReducers } from 'redux'
+
 let todos = [
   { id: 1, content: "hello1", completed: false },
   { id: 2, content: "hello2", completed: false }
 ]
 
-function rootReducer(state=todos, action) {
+function todosReducer(state=todos, action) {
   switch (action.type) {
     case 'COMPLETE':
       console.log(action.type, action.index)
@@ -12,7 +14,21 @@ function rootReducer(state=todos, action) {
     default:
       return state
   }
-  return state
 }
+
+function visibilityFilterReducer(state = 'SHOW_ALL', action) {
+  switch (action.type) {
+    case 'SET_VISIBILITY_FILTER':
+      console.log(action.filter)
+      return action.filter
+    default:
+      return state
+  }
+}
+
+let rootReducer = combineReducers({
+  todos: todosReducer,
+  visibilityFilter: visibilityFilterReducer
+})
 
 export default rootReducer
