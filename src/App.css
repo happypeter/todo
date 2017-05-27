@@ -55,13 +55,13 @@ li {
 .todo-list li.completed:after {
   content: '';
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   background-image: url(/img/right.svg);
   background-size: cover;
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 19px;
 }
 
 .form {
@@ -69,7 +69,43 @@ li {
   height: 110px;
 }
 
+.form .container {
+  width: 400px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.form .text-input {
+  width: 360px;
+  height: 40px;
+  background-color: #D8D8D8;
+  padding-left: 20px;
+}
+.form .submit {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  border: none;
+  background-color: #7ED321;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url(/img/add.svg);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 2px 4px;
+}
+
+.form .submit:focus {
+  outline: none;
+}
+
 .actions {
   border: 1px solid red;
   height: 110px;
+}
+.actions:click {
+  background-color: red;
 }
