@@ -46,6 +46,23 @@ li {
   line-height: 60px;
   font-size: 24px;
 }
+.todo-list li.completed {
+  color: #989191;
+  text-decoration: line-through;
+  position: relative;
+}
+
+.todo-list li.completed:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(/img/right.svg);
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
 
 .form {
   border: 1px solid red;

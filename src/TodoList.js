@@ -5,7 +5,7 @@ const TodoList = () => (
     <div className="container">
       <ul>
         <li>Todo</li>
-        <li>Todo</li>
+        <li className="completed">Todo</li>
         <li>Todo</li>
         <li>Todo</li>
         <li>Todo</li>
