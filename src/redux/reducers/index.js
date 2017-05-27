@@ -11,6 +11,14 @@ function todosReducer(state=todos, action) {
       console.log(action.type, action.index)
       const i = action.index
       return [...state.slice(0,i), { ...state[i], completed: true }, ...state.slice(i + 1)]
+    case 'ADD_TODO':
+      return [
+        ...state, {
+          id: state.length + 1,
+          content: action.content,
+          completed: false
+        }
+      ]
     default:
       return state
   }
