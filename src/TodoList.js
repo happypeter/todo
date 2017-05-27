@@ -1,17 +1,25 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const TodoList = () => (
-  <div className="todo-list">
-    <div className="container">
-      <ul>
-        <li>Todo</li>
-        <li className="completed">Todo</li>
-        <li>Todo</li>
-        <li>Todo</li>
-        <li>Todo</li>
-      </ul>
-    </div>
-  </div>
-)
+class TodoList extends React.Component {
+  render() {
+    let todoList = this.props.todos.map(item => (
+      <li key={Math.random()}>{item}</li>
+    ))
+    return(
+      <div className="todo-list">
+        <div className="container">
+          <ul>
+            {todoList}
+          </ul>
+        </div>
+      </div>
+    )
+  }
+}
 
-export default TodoList
+const mapStateToProps = (state) => ({
+  todos: state
+})
+
+export default connect(mapStateToProps)(TodoList)

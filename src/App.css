@@ -33,12 +33,10 @@ li {
 }
 
 .todo-list {
-  border: 1px solid red;
   height: 280px;
 }
 .todo-list .container {
   margin: 20px 120px;
-  border: 1px solid green;
   height: 240px;
   overflow: auto;
 }
@@ -46,6 +44,11 @@ li {
   line-height: 60px;
   font-size: 24px;
 }
+
+.todo-list li:hover {
+  cursor: pointer;
+}
+
 .todo-list li.completed {
   color: #989191;
   text-decoration: line-through;
@@ -65,13 +68,12 @@ li {
 }
 
 .form {
-  border: 1px solid red;
   height: 110px;
 }
 
 .form .container {
   width: 400px;
-  margin: 40px auto;
+  margin: 30px auto;
   position: relative;
 }
 
@@ -115,7 +117,7 @@ li {
 
 .actions .container {
   width: 190px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .actions div {
   width: 50px;
