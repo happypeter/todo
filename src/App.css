@@ -60,7 +60,7 @@ li {
   display: block;
   width: 22px;
   height: 22px;
-  background-image: url(/img/right.svg);
+  background-image: url(./img/right.svg);
   background-size: cover;
   position: absolute;
   right: 0;
@@ -99,7 +99,7 @@ li {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: url(/img/add.svg);
+  background-image: url(./img/add.svg);
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -130,10 +130,10 @@ li {
 
 .actions .list {
   float: left;
-  background-image: url(/img/list.svg);
+  background-image: url(./img/list.svg);
 }
 
 .actions .completed {
   float: right;
-  background-image: url(/img/right-red.svg);
+  background-image: url(./img/right-red.svg);
 }

@@ -16,7 +16,7 @@ class TodoList extends React.Component {
       todos = this.props.todos
     }
     let todoList = todos.map(item => (
-      <li onClick={this.handleClick.bind(this, item.id)}
+      <li onClick={() => this.props.onTodoClick(item.id)}
         className={item.completed ? 'completed' : ''}key={Math.random()}>
         {item.content}
       </li>
@@ -38,4 +38,12 @@ const mapStateToProps = (state) => ({
   visibilityFilter: state.visibilityFilter
 })
 
-export default connect(mapStateToProps)(TodoList)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onTodoClick: (id) => {
+      dispatch({ type: 'COMPLETE', index: id - 1 })
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList)

@@ -4,7 +4,7 @@ import Form from './Form'
 import Actions from './Actions'
 
 const Header = () => (
-  <div className="header">TODO</div>
+  <div className="header">Peter</div>
 )
 
 
